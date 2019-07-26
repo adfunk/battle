@@ -77,10 +77,10 @@ while running:
 
     print("===========================================")
     print(bcolors.OKGREEN + bcolors.BOLD + "STATS PLAYER:" + bcolors.ENDC)
-    print("Health:", player.get_hp())
-    print("Magic Points:", player.get_mp())
+    print("Health:", bcolors.OKGREEN + bcolors.BOLD + str(player.get_hp()), "/", str(player.get_max_hp()) + bcolors.ENDC)
+    print("Magic Points:", bcolors.FAIL + bcolors.BOLD + str(player.get_mp()), "/", str(player.get_max_mp()) + bcolors.ENDC)
     print("===========================================")
     print(bcolors.FAIL + bcolors.BOLD + "STATS ENEMY:" + bcolors.ENDC)
-    print("Health:", enemy.get_hp())
-    print("Magic Points:", enemy.get_mp())
+    print("Health:", bcolors.OKGREEN + bcolors.BOLD + str(enemy.get_hp()), "/", str(enemy.get_max_hp()) + bcolors.ENDC)
+    print("Magic Points:", bcolors.FAIL + bcolors.BOLD + str(enemy.get_mp()), "/", str(enemy.get_max_mp()) + bcolors.ENDC)
 
